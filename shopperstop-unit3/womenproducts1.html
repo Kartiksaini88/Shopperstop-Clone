@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/productharsh.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="body">
+        
+        <p1 id="htitle3"> 8069 Products</p1>
+        <div id="harshsortandtitle">
+        <p1 id="htitle">Women's Clothing</p1><p1 id="htitle2"> 8069 Products</p1>
+
+        <select name="sortharsh" id="harshsort" onchange="harshsort1()">
+            <option value="harshatoz" id="harshsort3">SORT BY: A TO Z</option>
+            <option value="harshztoa" id="harshsort3">SORT BY: Z TO A</option>
+            <option value="harshltoh" id="harshsort3">PRICE: LOW TO HIGH</option>
+            <option value="harshhtol" id="harshsort3">PRICE: HIGH TO LOW</option>
+            <option value="harshdltoh" id="harshsort3">DISCOUNT: LOW TO HIGH</option>
+            <option value="harshdhtol" id="harshsort3">DISCOUNT: HIGH TO LOW</option> TO LOW</option>
+        </select>
+    </div>
+        <br>
+        <br><br>
+        <div id="harshcontainer">
+        
+        <div id="harshcat">
+        <div id="harshcatcategories">
+<p id="inputcatharsh">CATEGORIES</p>
+
+<div id="line">
+    
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">ACCESORIES(430)</p> 
+</div>
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">BOTTOM WEAR(60)</p> 
+</div>
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">DRESS MATERIAL(1,070)</p> 
+</div>
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">DUPPATAS & SHAWLS(420)</p> 
+</div></div>
+        </div>
+        <div id="harshcatsubcategories">
+            <p id="inputcatharsh">SUB-CATEGORIES</p>
+            <div id="line">
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">BLOUSES(3)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">DUPATTAS(49)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">KURTAS(236)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">KURTIS & TOPS(31)</p> 
+            </div>
+        </div></div>
+        
+        <div id="harshcatbrands">
+            <p id="inputcatharsh">BRANDS</p>
+            <div id="line">
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">AARKE(16)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">ALLEN SOLLY(20)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">AND(2)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">AMUKTI(10)</p> 
+            </div></div>
+        </div>
+        <div id="harshcatoffers">
+            
+            <p id="inputcatharsh">OFFERS</p>
+ <div id="line">
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 30% OFF(55)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 25% OFF(73)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 40% OFF(22)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 50% OFF(906)</p> 
+            </div></div>
+        </div>
+        <br>
+        <button id="harshrefinesearch">REFINE SEARCH</button>
+        </div>
+        
+<div id="harshmain">
+    
+</div>
+
+</div>
+
+</div>
+<br><br><br>
+<div id="footer">
+
+</div>
+
+    </body>
+    </html>
+           
+<script type="module">
+    import header from "./components/header.js";
+
+let header_box=document.getElementById("header");
+header_box.innerHTML=header();
+
+let input=document.getElementById('search_btn');
+
+input.addEventListener('click',()=>{
+let input_value=document.getElementById('search_bar');
+localStorage.setItem("search_value",JSON.stringify(input_value));
+window.location.href="footer.html";
+});
+
+import footer from "./components/footer.js";
+
+let footer_box=document.getElementById('footer');
+footer_box.innerHTML=footer();
+
+</script>
+    <script >
+        var harsh1={
+
+"men":[
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h75/h39/26852871536670/A21INPT2116F_WHITE.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"349", 
+'strikeprice':" ₹ 699", 
+'description':"Printed Rayon Round Neck Womens Pin Tuck Top", 
+'off':"50",  
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/h56/h43/26852848795678/A21INPT2116F_WHITE_alt2.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h30/hf3/26852751999006/A21INPT2116F_WHITE_alt4.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/hc8/h89/26852846960670/A21INPT2116F_WHITE_alt3.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h8b/h35/26852680040478/A21INPT2116F_WHITE_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hf1/h55/26443782488094/A21KUR112511116_RED.jpg_1088Wx1632H",    
+'name':"Varanga", 
+'price':"999", 
+'strikeprice':" ₹ 3999", 
+'description':"Gotta Patti V- Neck Straight Designer Womens Kurtas", 
+'off':"75",    
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/h3b/hda/26443886493726/A21KUR112511116_RED_alt2.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h9a/h2a/26444936511518/A21KUR112511116_RED_alt3.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/hfd/hab/26444505415710/A21KUR112511116_RED_alt5.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h23/h78/26443887214622/A21KUR112511116_RED_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h0b/hff/17427557089310/A219701OA_FUCHSIA.jpg_1088Wx1632H",    
+'name':"Juniper", 
+'price':"1349", 
+'strikeprice':" ₹ 2999", 
+'description':"Embellished Silk Blend Mandarin Womens Regular Fit Kurta",
+'off':"55",    
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/he7/hf1/17427646939166/A219701OA_FUCHSIA_alt2.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h80/hec/17427793117214/A219701OA_FUCHSIA_alt3.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/h29/h40/17427665813534/A219701OA_FUCHSIA_alt5.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h12/h1c/17427486212126/A219701OA_FUCHSIA_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hda/hd9/17545535258654/CORESTKP06_BLACK.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"299", 
+'strikeprice':" ₹ 599", 
+'description':"Solid Straight Fit Cotton Lycra Womens All Occasions Pants", 
+'off':"50",    
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/h1a/hab/17377273610270/CORESTKP06_BLACK_alt2.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h62/h29/17544812134430/CORESTKP06_BLACK_alt3.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/h54/h4a/17545029910558/CORESTKP06_BLACK_alt5.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h46/hc6/17545440526366/CORESTKP06_BLACK_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h70/hec/26932919304222/A21ITP00985_PINK.jpg_1088Wx1632H",    
+'name':"Indya", 
+'price':"1800", 
+'strikeprice':"", 
+'description':"Embroidered Georgette Scoop Neck Womens Regular Top", 
+'off':"",    
+
+'rightimg':"",
+'frontimg':"",
+'halfimg':"",
+'backimg':"",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h54/hf6/26852837785630/A21INPT2110FB_RED.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"349", 
+'strikeprice':" ₹ 699", 
+'description':"Printed Rayon Crape Round Neck Womens Pin Tuck Top", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h5f/h4c/26852709990430/A21INGD2136F_GREEN.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"599", 
+'strikeprice':" ₹ 1199", 
+'description':"Printed Round Neck Cotton Flex Womens Gather Dress", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h45/h4d/17435785297950/A21112510880_BLUE.jpg_1088Wx1632H",    
+'name':"Varanga", 
+'price':"824", 
+'strikeprice':" ₹ 3299", 
+'description':"Printed Cotton Halter Neck Womens Calf Length Kurta", 
+'off':"75",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/ha9/h09/17201449074718/A21YI0893DP_GREEN.jpg_1088Wx1632H",    
+'name':"Yuris", 
+'price':"1224", 
+'strikeprice':" ₹ 3499", 
+'description':"Lace Round Neck Cotton Womens Kurta Palazzo Set", 
+'off':"65",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h1e/h4f/17545476571166/CORESTKP02_MAROON.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"299", 
+'strikeprice':" ₹ 599", 
+'description':"Solid Straight Fit Cotton Lycra Womens All Occasions Pants", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h32/hcb/17545314205726/CORESTKP01_WHITE.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"299", 
+'strikeprice':" ₹ 599", 
+'description':"Solid Straight Fit Cotton Lycra Womens All Occasions Pants",
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hcb/h08/17545317220382/CORESTKP03_BEIGE.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"299", 
+'strikeprice':" ₹ 599", 
+'description':"Solid Straight Fit Cotton Lycra Womens All Occasions Pants", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h70/hbe/26932590608414/A21ISK00684_GREEN.jpg_1088Wx1632H",    
+'name':"Indya", 
+'price':"2040", 
+'strikeprice':" ₹ 3400", 
+'description':"Printed Georgette Regular Fit Womens Festive Wear Saree", 
+'off':"40",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hda/heb/26402612379678/A21KHMY3253_PINK.jpg_1088Wx1632H",    
+'name':"Kami Kubi", 
+'price':"1999", 
+'strikeprice':" ₹ 4999", 
+'description':"Embroidered Silk Blend Womens Unstitched Suit Piece", 
+'off':"60",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hc7/ha9/17237385052190/A21INFLE4C_GREY.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"199", 
+'strikeprice':" ₹ 499", 
+'description':"Fitted Full Length Cotton Lycra Womens Leggings", 
+'off':"60",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h72/h82/26932797997086/A21ITN03383_PINK.jpg_1088Wx1632H",    
+'name':"Indya", 
+'price':"1680", 
+'strikeprice':" ₹ 2800", 
+'description':"Embroidered Round Neck Georgette Womens Ankle Length Kurta", 
+'off':"40",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hca/h0e/17545312043038/A21STEPP77_SKY_BLUE.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"559", 
+'strikeprice':" ₹ 799", 
+'description':"Printed Cotton Mandarin Womens Knee Length Kurta", 
+'off':"30",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h6d/h4c/16805602295838/S2110044AEIFU_FUSCHIA.jpg_1088Wx1632H",    
+'name':"Juniper", 
+'price':"1394", 
+'strikeprice':" ₹ 3099", 
+'description':"Embroidered Mandarin Neck Anarkali Womens Kurta", 
+'off':"55",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h18/hb3/26835305103390/AW21HCST252_GREEN.jpg_1088Wx1632H",    
+'name':"Haute Curry", 
+'price':"1767", 
+'strikeprice':"", 
+'description':"Printed Mandarin Neck Regular Womens Tunics & Tops",
+'off':"",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hfc/hb2/17221372280862/A21JNE3714KR_PEACOCK.jpg_1088Wx1632H",    
+'name':"Janasya", 
+'price':"629", 
+'strikeprice':" ₹ 1399", 
+'description':"Floral Crepe V-Neck Womens Flared Kurta", 
+'off':"55",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h37/hb8/17545301098526/CORESTCP06_BEIGE.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"299", 
+'strikeprice':" ₹ 599", 
+'description':"Solid Straight Fit Cotton Womens All Occasions Pants", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/ha1/h41/26477881851934/A21INFSKU08_NAVY.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"319", 
+'strikeprice':" ₹ 799", 
+'description':"Printed Cotton Mandarin Neck Womens Straight Fit Kurta", 
+'off':"60",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h4c/hcf/27053415333918/S22734RF8688_MUSTARD.jpg_1088Wx1632H",    
+'name':"Neerus", 
+'price':"990", 
+'strikeprice':" ₹ 1980", 
+'description':"Embroidered Cotton Blend Round Neck Womens Straight Kurta",
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h29/h71/26523521253406/AW21KSSE223F_FUCHSIA.jpg_1088Wx1632H",    
+'name':"Kashish", 
+'price':"2799", 
+'strikeprice':"₹ 3999", 
+'description':"Embroidered Round Neck Viscose Blend Womens Ethnic Set", 
+'off':"30",    
+},
+],
+};
+
+var harsh4=harsh1.men;
+var harshnormal2=harsh4;
+console.log(harshnormal2);
+var harshltoh=harsh4;
+var hmain= document.getElementById("harshmain");
+var harshhtol=harsh4;
+
+var count=0;
+function harshsort1(){
+
+var harshsort2=document.getElementById("harshsort")
+if(harshsort2.value=="harshatoz"){
+    count++;
+    harshnormal2.sort(function (x, y) {
+        let a = x.name.toUpperCase(),
+        b = y.name.toUpperCase();
+    return a == b ? 0 : a > b ? 1 : -1
+    }); 
+    harshappend(harshnormal2,hmain)
+}
+else if(harshsort2.value=="harshztoa"){
+    count++;
+    harshnormal2.sort(function (x, y) {
+        let b = x.name.toUpperCase(),
+        a = y.name.toUpperCase();
+    return a == b ? 0 : a > b ? 1 : -1
+    }); 
+    harshappend(harshnormal2,hmain)
+}
+
+else if(harshsort2.value=="harshltoh"){
+count++;
+harshltoh.sort(function (x, y) {
+    
+   return x.price - y.price;
+});
+
+
+harshappend(harshltoh,hmain)
+}
+else if(harshsort2.value=="harshhtol")
+{
+count++;
+harshhtol.sort(function (x, y) {
+    
+    return y.price - x.price;
+});
+
+harshappend(harshhtol,hmain)
+}
+else if(harshsort2.value=="harshdltoh"){
+count++;
+    harshltoh.sort(function (x, y) {
+        
+       return x.off - y.off;
+   });
+
+
+   harshappend(harshltoh,hmain)
+}
+else if(harshsort2.value=="harshdhtol")
+{
+    count++;
+    harshhtol.sort(function (x, y) {
+        
+        return y.off - x.off;
+    });
+ 
+    harshappend(harshhtol,hmain)
+}
+
+}
+
+//console.log(harsh1,hmain)
+if(count==0){
+harshappend(harsh1.men,hmain)
+}
+function harshappend(data,hmain){
+
+    hmain.innerHTML=null;
+data.forEach((e)=>{
+  // console.log(e)
+    let div=document.createElement("div")
+    div.id="harshdiv"
+
+let harshimage=document.createElement("img")
+harshimage.src=e.img;
+harshimage.id="harshimage";
+
+let harshtitle=document.createElement("p")
+harshtitle.innerText=e.name;
+harshtitle.id="harshtitle"
+let harshdescription=document.createElement("p")
+harshdescription.innerText=e.description;
+harshdescription.id="harshdescription";
+
+let harshprice=document.createElement("p1")
+harshprice.innerText=`₹${e.price}`;
+harshprice.id="harshprice";
+
+
+let harshprice2=document.createElement("p1")
+harshprice2.innerText=e.strikeprice;
+
+harshprice2.id="harshstrike";
+
+let harshprice3=document.createElement("p1")
+if(e.off==""){
+harshprice3.innerText=null;
+}
+else{
+harshprice3.innerText=`${e.off}% off`;
+}
+harshprice3.id="harshofftext";
+div.onclick=function(){
+    localStorage.setItem("data",JSON.stringify(e));
+    window.location.href="womensProductPage.html"
+}
+
+let harshnewline=document.createElement("p")
+harshnewline.innerText="";
+
+div.append(harshimage,harshtitle,harshdescription,harshprice,harshprice2,harshprice3,harshnewline)
+
+hmain.append(div)
+})
+}
+    </script>

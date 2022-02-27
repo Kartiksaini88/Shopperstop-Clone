@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://npmcdn.com/flickity@2/dist/flickity.css"
+  />
+    <style>
+      #top_header{
+          display: flex;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #store_contact{
+          display: flex;
+          flex: 2;
+          margin: 20px 10px 20px 10px;
+      }
+      #home_logo{
+          width: 20px;
+          margin-top: 2px;
+      }
+      #page_logo{
+          margin-top: 2px;
+          width: 25px;  
+      }
+      #search_btn{
+          margin-top: 10px;
+          width: 20px;
+          height: 20px;
+      }
+      #name_logo{
+          width: 350px;
+          margin: 20px 10px 10px 80px
+      }
+      #input_bar{
+          display: flex;
+      }
+      #right_head{
+          display: flex;
+          flex: 3;
+          margin: 20px 10px 10px 10px;
+      }
+      #search_bar{
+          width: 350px;
+          height: 40px;
+          border: none;
+      }
+      #input_bar{
+      width: 400px;
+      border-bottom: 1px solid #333;
+      }
+      #input_bar:hover{
+      border-bottom-color: #3f37c9;
+      }
+      #contact_a,#store_a{
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #777;
+      }
+      #right_head>div{
+          margin-left: 20px;
+      }
+      #sub_header{
+          display: flex;
+          margin: 0px 50px 0px 50px;
+      }
+      #sub_header>a{
+          width: 124px;
+          height: 50px;
+       padding: 15px 20px 0px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      box-sizing: border-box;
+      border-bottom: 2px solid white;
+      font-family: sans-serif;
+      }
+      #sub_header>a:hover{
+          color: #f94144;
+          border-bottom-color:#f94144 ;
+      }
+      
+      
+      *{
+          font: 1em sans-serif;
+          color: #777;
+      }
+      
+      #info_foot{
+          display: flex;
+          height: 180px;
+          background-color: lightgray;
+      }
+      #info_foot>div{
+          flex: 1;
+          text-align: center;
+          justify-content: center;
+          
+      }
+      #store_app,#facility,#social_app{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      #store_app>img{
+          width: 130px;
+          height: 40px;
+          margin-left: 5px;
+      }
+      #info_logo{
+          width: 40px;
+          height: 40px;
+      }
+      #facility>div{
+          margin-left: 10px;
+      }
+      #social_app>img{
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+      }
+      .h3{
+          font-weight: 600;
+      }
+      #footer_cat {
+          display: flex;
+          justify-content: space-evenly;
+      }
+      #customer_care{
+          background-color: black;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 20px 0px 20px 0px;
+          font: 1em sans-serif;
+      }
+      .cust_white{
+          color: white;
+      }
+      #BRAND{
+        background-color: black;
+        border: 1p solid white;
+        width: 200px;
+        height: 50px;
+      }
+      #foot_details{
+        padding: 20px 30px 20px 30px ;
+      }
+      #foot_head{
+        color: black;
+        font-weight: 600;
+      }
+      /*header css*/
+      
+      #top_header{
+          display: flex;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #store_contact{
+          display: flex;
+          flex: 2;
+          margin: 20px 10px 20px 10px;
+      }
+      #home_logo{
+          width: 20px;
+          margin-top: 2px;
+      }
+      #page_logo{
+          margin-top: 2px;
+          width: 25px;  
+      }
+      #search_btn{
+          margin-top: 10px;
+          width: 20px;
+          height: 20px;
+      }
+      #name_logo{
+          width: 350px;
+          margin: 20px 10px 10px 80px
+      }
+      #input_bar{
+          display: flex;
+      }
+      #right_head{
+          display: flex;
+          flex: 3;
+          margin: 20px 10px 10px 10px;
+      }
+      #search_bar{
+          width: 350px;
+          height: 40px;
+          border: none;
+      }
+      #input_bar{
+      width: 400px;
+      border-bottom: 1px solid #333;
+      }
+      #input_bar:hover{
+      border-bottom-color: #3f37c9;
+      }
+      #contact_a,#store_a{
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #777;
+      }
+      #right_head>div{
+          margin-left: 20px;
+      }
+      #sub_header{
+          display: flex;
+          margin: 0px 50px 0px 50px;
+      }
+      #sub_header>a{
+          width: 124px;
+          height: 50px;
+       padding: 15px 20px 0px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      box-sizing: border-box;
+      border-bottom: 2px solid white;
+      font-family: sans-serif;
+      }
+      #sub_header>a:hover{
+          color: #f94144;
+          border-bottom-color:#f94144 ;
+      }
+      
+      
+      *{
+          font: 1em sans-serif;
+          color: #777;
+      }
+      
+      #info_foot{
+          display: flex;
+          height: 180px;
+          background-color: lightgray;
+      }
+      #info_foot>div{
+          flex: 1;
+          text-align: center;
+          justify-content: center;
+          
+      }
+      #store_app,#facility,#social_app{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      #store_app>img{
+          width: 130px;
+          height: 40px;
+          margin-left: 5px;
+      }
+      #info_logo{
+          width: 40px;
+          height: 40px;
+      }
+      #facility>div{
+          margin-left: 10px;
+      }
+      #social_app>img{
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+      }
+      .h3{
+          font-weight: 600;
+      }
+      #footer_cat {
+          display: flex;
+          justify-content: space-evenly;
+      }
+      #customer_care{
+          background-color: black;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 20px 0px 20px 0px;
+          font: 1em sans-serif;
+      }
+      .cust_white{
+          color: white;
+      }
+      #BRAND{
+        background-color: black;
+        border: 1p solid white;
+        width: 200px;
+        height: 50px;
+      }
+      #foot_details{
+        padding: 20px 30px 20px 30px ;
+      }
+      #foot_head{
+        color: black;
+        font-weight: 600;
+      }
+      
+      
+      #GPContainer{
+        display: flex;
+        margin: 0 auto;
+        width:80%;
+      }
+      #Leftdiv {
+        width: 50%;
+      }
+      #Leftdiv>div{
+        margin-bottom: 3%;
+      }
+      #First-leftDiv {
+        width: 100%;
+        display: flex;
+        height: 20%;
+        
+      }
+      #First-leftDiv > div {
+        width: 50%;
+        /* border: 1px solid black; */
+        border: 1px solid rgb(206, 185, 185);
+        margin-right: 2%;
+      }
+      #First-leftDiv > div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #Second-leftDiv {
+        width: 100%;
+        height: 40%;
+        border: 1px solid rgb(206, 185, 185);
+      }
+      #Second-leftDiv > img {
+        width: 100%;
+        height: 100%;
+      }
+      #Third-leftDiv {
+        width: 100%;
+        display: flex;
+        height: 15%;
+      
+      }
+      #Third-leftDiv > div {
+        width: 33.33%;
+        margin-right: 1%;
+        border: 1px solid rgb(206, 185, 185);
+      }
+      #Third-leftDiv > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #Fourth-leftDiv {
+        width: 100%;
+        height: 15%;
+        border: 1px solid rgb(206, 185, 185);
+      }
+      #Fourth-leftDiv > img {
+        width: 40%;
+        height: 100%;
+      }
+      /* left div end */
+      #Rightdiv {
+        width: 50%;
+        margin-left: 2%;
+      }
+      #first-RightDiv {
+        height: 40%;
+        width: 90%;
+        /* border: 1px solid black; */
+      }
+      #first-First-RightDiv {
+        height: 6%;
+        /* border: 1px solid black; */
+      }
+      #first-First-RightDiv > p {
+        font-size: 30px;
+        margin-top: -5px;
+      }
+      #first-Second-RightDiv {
+        height: 5%;
+        margin-top: -30px;
+        /* border: 1px solid black; */
+      }
+      #first-Second-RightDiv > p {
+        font-size: 19px;
+        margin-top: 0px;
+        color: rgb(150, 112, 112);
+      }
+      #first-Third-RightDiv {
+        height: 10%;
+        /* border: 1px solid black; */
+        line-height: 0px;
+      }
+      #first-Third-RightDiv>div{
+        display:flex;
+      }
+      #first-Third-RightDiv>div>p{
+        font-size:21px;
+        text-decoration: none;
+      }
+      #pgaurav{
+        text-decoration: line-through !important;
+        
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+      #pgaurav1{
+        
+        margin-left: 3%;
+        margin-right: 3%;
+        color: #FF6B35; 
+      }
+      #first-Third-RightDiv>div>h3{
+        color:rgb(201, 144, 38);
+        font-size: 20px;
+
+      }
+      #first-Third-RightDiv > p {
+        color: rgb(173, 134, 134);
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      #first-Fourth-RightDiv {
+        height: 15%;
+        /* border: 1px solid black; */
+      }
+      #first-Fourth-RightDiv>img{
+        height:40%;
+        width: 6%;
+        border-radius: 50%;
+        /* border: 1px solid black; */
+      }
+      #first-Fifth-RightDiv {
+        height: 5%;
+        /* border: 1px solid black; */
+        display:flex
+      }
+      #first-Fifth-RightDiv>p{
+        font-size: 20px;
+      }
+      #first-Fifth-RightDiv>h4{
+        font-size: 18px;
+        margin-top:20px
+      }
+      #first-Sixth-RightDiv {
+        height: 20%;
+        /* border: 1px solid black; */
+      }
+      #first-Sixth-RightDiv>:nth-child(1){
+        display:flex;
+        justify-content: space-between;
+        font-size: 18px;
+      }
+      #first-Sixth-RightDiv>:nth-child(2)>button{
+        border-radius: 50%;
+        padding: 15px;
+        margin-right: 10px;
+        background-color:white;
+        border: 1px solid black;
+        margin-bottom:10px;
+      }
+      #first-Sixth-RightDiv>span{
+        font-size: 18px;
+        background-color:rgb(240, 234, 234)
+      }
+      #first-Seventh-RightDiv {
+        height: 8%;
+        /* border: 1px solid black; */
+        display:flex;
+      }
+      #first-Seventh-RightDiv>img {
+          /* border-radius: 50%; */
+          height:40%;
+          margin-top:2%;
+          margin-right:15px;
+      }
+      #first-Seventh-RightDiv>button{
+        width:22%;
+        height:50%;
+        margin-top:1.5%;
+        font-weight: bold;
+        background-color:black;
+        color:white;
+        border:none;
+      }
+      #first-Eight-RightDiv{
+        height:25%;
+        border: 1px solid rgb(211, 182, 182);
+      }
+      #first-Eight-RightDiv>:nth-child(1){
+        width:100%;
+        height:30%;
+        /* border: 1px solid black; */
+        display:flex;
+      }
+      #first-Eight-RightDiv>:nth-child(1)>img{
+        height:50%;
+        margin-top:2.5%;
+        color:orange;
+      }
+      #first-Eight-RightDiv>:nth-child(1)>p{
+          font-size:20px;
+          margin-left:3%;
+      }
+    .Eight-firstP{
+        font-size:20px;
+        font-weight:bold;
+        color:rgb(212, 153, 42)
+      }
+      .Eight-SecondP{
+        font-size:18px;
+      }
+      .a {
+        width:87%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(211, 182, 182);
+      }
+      .a_question {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin: auto;
+        margin-top: -24px;
+      }
+      .a_answer {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: none;
+        font-family: FavoritFreshly, Helvetica Neue, Helvetica, Arial,
+          sans-serif;
+      }
+      .a.active .a_answer {
+        display: block;
+      }
+      #innerdiv {
+        display: flex;
+      }
+      #innerdiv>div{
+        width:40%;
+        margin:2%;
+      }
+
+      /* slider style */
+      #Card-div {
+        height: 400px;
+        width: 300px;
+        margin-left: 10px;
+        line-height: 16px;
+      }
+      #Card-div > img {
+        height: 60%;
+        width: 100%;
+      }
+      .descriptionDiv {
+        width: 100%;
+      }
+      .descriptionDiv > p {
+        /* text-align:center; */
+        width: 80%;
+        color: rgb(177, 156, 156);
+      }
+      .dataButtondiv > button {
+        all: unset;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+      }
+      .dataButtondiv {
+        text-align: center;
+      }
+      #PeopleViewed{
+        font-family: Metropolis,Serif,Sans-Serif;
+        font-size:30px;
+        text-align:center;
+      }
+      #SliderDiv{
+        margin-top:-300px;
+      }
+      #addtocartgaurav{
+        width: 150px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="GPContainer">
+      <div id="Leftdiv">
+        <div id="First-leftDiv">
+          <div>
+            <img
+              src="https://sslimages.shoppersstop.com/sys-master/images/hae/ha1/26974345297950/SS22RLSHSS2228_GREEN_alt1.jpg_1088Wx1632H"
+              alt="" id="backimage"
+            />
+          </div>
+          <div>
+            <img
+              src="https://sslimages.shoppersstop.com/sys-master/images/ha6/h5a/26974977785886/SS22RLSHSS2228_GREEN_alt2.jpg_1088Wx1632H"
+              alt="" id="rightimage"
+            />
+          </div>
+        </div>
+        <div id="Second-leftDiv">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/images/h74/hed/26975179440158/SS22RLSHSS2228_GREEN.jpg_1088Wx1632H" id="mimage"
+            alt=""
+          />
+        </div>
+        <div id="Third-leftDiv">
+          <div>
+            <img
+              src=""
+              alt="" id="frontimage"
+            />
+          </div>
+          <!-- <div>
+            <img
+              src="https://sslimages.shoppersstop.com/sys-master/images/h87/hb6/26975076712478/SS22RLSHSS2228_GREEN_alt4.jpg_1088Wx1632H"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://sslimages.shoppersstop.com/sys-master/images/hed/h90/26975275384862/SS22RLSHSS2228_GREEN_alt5.jpg_1088Wx1632H"
+              alt=""
+            />
+          </div> -->
+        </div>
+        <div id="Fourth-leftDiv">
+          <img
+            src="https://sslimages.shoppersstop.com/sys-master/images/h54/ha7/26975146082334/SS22RLSHSS2228_GREEN_alt6.jpg_1088Wx1632H"
+            alt="" id="halfimage"
+          />
+        </div>
+      </div>
+      <div id="Rightdiv">
+        <div id="first-RightDiv">
+          <div id="first-First-RightDiv">
+            <p id="titleproducth">Tommy Hilfiger</p>
+          </div>
+          <div id="first-Second-RightDiv">
+            <p id="desch">Solid Cotton Stretch Slim Fit Mens Casual Shirt</p>
+          </div>
+          <div id="first-Third-RightDiv">
+            <div>
+              <p id="priceha">₹1900</p>
+              <p id="pgaurav">₹3999</p>
+              <p id="pgaurav1">50% OFF</p>
+            </div>
+
+            <p>Includes all Taxes</p>
+          </div>
+          <br>
+          <div id="first-Fourth-RightDiv">
+            <h3>Black</h3>
+            <img
+              src="https://sslimages.shoppersstop.com/sys-master/images/hf8/h6b/26911861211166/A21346NC09_BLACK_alt1.jpg_1088Wx1632H"
+              alt="" id="backimage1"
+            />
+          </div>
+          <div id="first-Fifth-RightDiv">
+            <p>Find your perfect match!</p>
+            <h4>Ask your Expert Advisor</h4>
+          </div>
+          <div id="first-Sixth-RightDiv">
+            <div>
+              <h4>Size</h4>
+              <h5>Size Chart</h5>
+            </div>
+
+            <div>
+              <button>LARGE</button>
+              <button>MEDIUM</button>
+              <button>SMALL</button>
+              <button>X-LARGE</button>
+              <button>XX-LARGE</button>
+            </div>
+            <span>
+              14 days easy return and exchange applicable for this item
+            </span>
+          </div>
+          <br><br>
+          <br> <br><br>
+          <div id="first-Seventh-RightDiv">          <img src="https://cdn-icons.flaticon.com/png/512/1358/premium/1358023.png?token=exp=1645699779~hmac=9d6e160a373fdb2612e852190b69418d" alt="">
+           <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
+            <button id="addtocartgaurav" onclick="countaddc()">ADD TO CART</button>
+          </div>
+          <div id="first-Eight-RightDiv">
+            <div>
+              <img src="https://cdn-icons-png.flaticon.com/128/726/726476.png" alt="">
+              <p>2 Offers</p>
+            </div>
+            <div>
+              <p class="Eight-firstP">FLAT 50% OFF</p>
+              <p class="Eight-SecondP">Buy Any 1 Or More Of Fratini And Get 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <br> <br><br> <br> <br>
+        <div class="a">
+          <div class="a_question">
+            <p>Product Details</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer">
+            <h4>Product Description</h4>
+            <div id="innerdiv">
+              <div>
+                <p>Country of Origin</p>
+                <p>Sleeves</p>
+                <p>Fit</p>
+                <p>Neckline</p>
+                <p>Pattern</p>
+                <p>Fabric</p>
+                <p>Pack Of</p>
+                <p>Occasion</p>
+                <p>Collar</p>
+              </div>
+              <div>
+                <p>Srilanka</p>
+                <p>Half Sleeves</p>
+                <p>Slim Fit</p>
+                <p>Polo Collar</p>
+                <p>solid</p>
+                <p>Cotton</p>
+                <p>Pack of 1</p>
+                <p>Casual</p>
+                <p>Regular Collar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>Style Note</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer"></div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>About Brand</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer">
+            <p>TOMMY HILFIGER:</p>
+          </div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>Delivery Service</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer">
+            <p>View Available Services for your pincode</p>
+            <input type="number" />
+            <button>Check</button>
+          </div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>Rating & Review</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer"></div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>More Jackets From Tommy Hilfiger</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer"></div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>More products From Tommy Hilfiger</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer"></div>
+        </div>
+        <div class="a">
+          <div class="a_question">
+            <p>More Jackets</p>
+            <i
+              style="margin-top: 20px;"
+              class="fa fa-chevron-down"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="a_answer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="SliderDiv">
+      <p id="PeopleViewed"> People Also View</p>
+      <div id="FirstSlider" class="carousel1" data-flickity='{ "groupCells": "100%","groupCells": true }'></div>
+      <p></p>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script>
+  var countaddtocart=0;
+function countaddc(){
+  countaddtocart++;
+  if(countaddtocart<=0){
+    document.getElementById("headercounthe").innerText=null;
+  }
+else if(countaddtocart>=1){
+    document.getElementById("headercounthe").innerText=countaddtocart;
+  }
+}
+
+var title=document.getElementById("titleproducth")
+var maindata=JSON.parse(localStorage.getItem("data"))
+console.log(maindata)
+title.innerText=maindata.name;
+
+var title1=document.getElementById("desch")
+title1.innerText=maindata.description;
+var title2=document.getElementById("pgaurav")
+title2.innerText=maindata.strikeprice;
+var title4=document.getElementById("priceha")
+title4.innerText=maindata.price;
+var title5=document.getElementById("pgaurav1")
+title5.innerText=`${maindata.off}% Off`
+
+
+var mainimage=document.getElementById("mimage")
+mainimage.src=maindata.img;
+
+var mainimage2=document.getElementById("backimage")
+mainimage2.src=maindata.backimg;
+
+var mainimage21=document.getElementById("backimage1")
+mainimage21.src=maindata.backimg;
+
+var mainimage3=document.getElementById("rightimage")
+mainimage3.src=maindata.rightimg;
+
+
+var mainimage4=document.getElementById("frontimage")
+mainimage4.src=maindata.frontimg;
+
+var mainimage5=document.getElementById("halfimage")
+mainimage5.src=maindata.halfimg;
+
+</script>  
+<script src="data.js"></script>
+
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="module">
+  // var mimage=document.getElementById("mimage")
+  // var m2=localStorage.getItem("mimage");
+  // mimage.src=m2;
+    let PeopleAlsoView = [
+    {
+      name: 'Madame',
+      description: 'Solid Square Neck Cotton Blend Womens Casual Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h4c/h17/16364337201182/206737473_BLUSH.jpg_136Wx204H',
+      prize: 2599,
+    },
+    {
+      name: 'Faballey',
+      description: 'Solid Crepe V Neck Womens Regular Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h9e/hdc/26824022130718/A21FABDRS04179_GREEN.jpg_136Wx204H',
+      prize: 2400,
+    },
+    {
+      name: 'Zink London',
+      description: 'Checks Cotton Womens Shift Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h3c/h69/26666153869342/A21ZINKD01854_NAVY.jpg_136Wx204H',
+      prize: 1200,
+    },
+    {
+      name: 'Fratini',
+      description: 'Solid Round Neck Polyster Womens Regular Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/hcf/h31/26415179530270/A21346DR71_PEACH.jpg_136Wx204H',
+      prize: 1049,
+    },
+    {
+      name: 'Latin Quarter',
+      description: 'Womens Lurex Knit Solid Cap Sleeves 2 fir ! dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h7b/h49/15745365639198/A20LQD8572_BLACK.jpg_136Wx204H',
+      prize: 3999,
+    },
+    {
+      name: 'Cera',
+      description: 'Printed Round Neck Viscose Royoon Womens Wrap Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/hd7/hba/16901679054878/S21SERALA2872WH_WHITE.jpg_136Wx204H',
+      prize: 2499,
+    },
+    {
+      name: 'Rare',
+      description: 'Printed V-Neck Polyster Womens fit and Flare Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h4c/h6b/17037360463902/S21RAREEP6504BL_BLACK.jpg_136Wx204H',
+      prize: 1499,
+    },
+    {
+      name: 'Emblaze',
+      description: 'Womens Black And Green Pannel Gown',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h81/hd5/16054236184606/A20EMBW86BLAC_BLACK.jpg_136Wx204H',
+      prize: 2499,
+    },
+    {
+      name: 'Zink London',
+      description: 'Checks Cotton Womens Shift Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h16/hf3/26666270261278/A21ZINKD01852_GREEN.jpg_136Wx204H',
+      prize: 1200,
+    },
+    {
+      name: 'Madame',
+      description: 'Solid Square Neck Cotton Blend Womens Casual Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h0d/hdc/17424837115934/A21MADM1W13245B_BLUE.jpg_136Wx204H',
+      prize: 2599,
+    },
+    {
+      name: 'Fratini',
+      description: 'Solid Round Neck Polyster Womens Regular Dress',
+      image:
+        'https://sslimages.shoppersstop.com/sys-master/images/h25/h27/26655178457118/A21346NC02_BLUSH.jpg_136Wx204H',
+      prize: 1049,
+    }
+  ]
+  //===============================================Complete The Look=================================//
+
+  let answers = document.querySelectorAll('.a')
+  answers.forEach((event) => {
+    event.addEventListener('click', () => {
+      if (event.classList.contains('active')) {
+        event.classList.remove('active')
+      } else {
+        event.classList.add('active')
+      }
+    })
+  })
+
+  import { showdata } from './scripts/main.js'
+  var parent1 = document.querySelector('#FirstSlider')
+  var res1 = showdata(PeopleAlsoView, parent1)
+
+  var parent2 = document.querySelector('#SecondSlider')
+  var res2 = showdata(CompleteTheLook, parent2)
+</script>
+
+         
+<script type="module">
+  import header from "./components/header.js";
+
+let header_box=document.getElementById("header");
+header_box.innerHTML=header();
+
+let input=document.getElementById('search_btn');
+
+input.addEventListener('click',()=>{
+let input_value=document.getElementById('search_bar');
+localStorage.setItem("search_value",JSON.stringify(input_value));
+window.location.href="footer.html";
+});
+
+import footer from "./components/footer.js";
+
+let footer_box=document.getElementById('footer');
+footer_box.innerHTML=footer();
+
+</script>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        
+/*header css*/
+
+#top_header{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#store_contact{
+    display: flex;
+    flex: 2;
+    margin: 20px 10px 20px 10px;
+}
+#home_logo{
+    width: 20px;
+    margin-top: 2px;
+}
+#page_logo{
+    margin-top: 2px;
+    width: 25px;  
+}
+#search_btn{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+#name_logo{
+    width: 350px;
+    margin: 20px 10px 10px 80px
+}
+#input_bar{
+    display: flex;
+}
+#right_head{
+    display: flex;
+    flex: 3;
+    margin: 20px 10px 10px 10px;
+}
+#search_bar{
+    width: 350px;
+    height: 40px;
+    border: none;
+}
+#input_bar{
+width: 400px;
+border-bottom: 1px solid #333;
+}
+#input_bar:hover{
+border-bottom-color: #3f37c9;
+}
+#contact_a,#store_a{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+}
+#right_head>div{
+    margin-left: 20px;
+}
+#sub_header{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+}
+#sub_header>a{
+    width: 124px;
+    height: 50px;
+ padding: 15px 20px 0px 20px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+box-sizing: border-box;
+border-bottom: 2px solid white;
+font-family: sans-serif;
+}
+#sub_header>a:hover{
+    color: #f94144;
+    border-bottom-color:#f94144 ;
+}
+
+
+*{
+    font: 1em sans-serif;
+    color: #777;
+}
+
+#info_foot{
+    display: flex;
+    height: 180px;
+    background-color: lightgray;
+}
+#info_foot>div{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    
+}
+#store_app,#facility,#social_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#store_app>img{
+    width: 130px;
+    height: 40px;
+    margin-left: 5px;
+}
+#info_logo{
+    width: 40px;
+    height: 40px;
+}
+#facility>div{
+    margin-left: 10px;
+}
+#social_app>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.h3{
+    font-weight: 600;
+}
+#footer_cat {
+    display: flex;
+    justify-content: space-evenly;
+}
+#customer_care{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px 20px 0px;
+    font: 1em sans-serif;
+}
+.cust_white{
+    color: white;
+}
+#BRAND{
+  background-color: black;
+  border: 1p solid white;
+  width: 200px;
+  height: 50px;
+}
+#foot_details{
+  padding: 20px 30px 20px 30px ;
+}
+#foot_head{
+  color: black;
+  font-weight: 600;
+}
+/*header css*/
+
+#top_header{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#store_contact{
+    display: flex;
+    flex: 2;
+    margin: 20px 10px 20px 10px;
+}
+#home_logo{
+    width: 20px;
+    margin-top: 2px;
+}
+#page_logo{
+    margin-top: 2px;
+    width: 25px;  
+}
+#search_btn{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+#name_logo{
+    width: 350px;
+    margin: 20px 10px 10px 80px
+}
+#input_bar{
+    display: flex;
+}
+#right_head{
+    display: flex;
+    flex: 3;
+    margin: 20px 10px 10px 10px;
+}
+#search_bar{
+    width: 350px;
+    height: 40px;
+    border: none;
+}
+#input_bar{
+width: 400px;
+border-bottom: 1px solid #333;
+}
+#input_bar:hover{
+border-bottom-color: #3f37c9;
+}
+#contact_a,#store_a{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+}
+#right_head>div{
+    margin-left: 20px;
+}
+#sub_header{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+}
+#sub_header>a{
+    width: 124px;
+    height: 50px;
+ padding: 15px 20px 0px 20px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+box-sizing: border-box;
+border-bottom: 2px solid white;
+font-family: sans-serif;
+}
+#sub_header>a:hover{
+    color: #f94144;
+    border-bottom-color:#f94144 ;
+}
+
+
+*{
+    font: 1em sans-serif;
+    color: #777;
+}
+
+#info_foot{
+    display: flex;
+    height: 180px;
+    background-color: lightgray;
+}
+#info_foot>div{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    
+}
+#store_app,#facility,#social_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#store_app>img{
+    width: 130px;
+    height: 40px;
+    margin-left: 5px;
+}
+#info_logo{
+    width: 40px;
+    height: 40px;
+}
+#facility>div{
+    margin-left: 10px;
+}
+#social_app>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.h3{
+    font-weight: 600;
+}
+#footer_cat {
+    display: flex;
+    justify-content: space-evenly;
+}
+#customer_care{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px 20px 0px;
+    font: 1em sans-serif;
+}
+.cust_white{
+    color: white;
+}
+#BRAND{
+  background-color: black;
+  border: 1p solid white;
+  width: 200px;
+  height: 50px;
+}
+#foot_details{
+  padding: 20px 30px 20px 30px ;
+}
+#foot_head{
+  color: black;
+  font-weight: 600;
+}
+        .out {
+            display: inline-flex;
+          
+            margin-right: 200px;
+            gap: 20px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .container {
+            
+            display: inline-block;
+        
+            
+           
+        }
+        #heading {
+            text-align: center;
+            
+
+        }
+        #heading>h1 {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+        }
+       
+       
+        
+        button {
+            background: linear-gradient(to right, #ff9966 0%, #ff0066 100%);
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+            width: 200px;
+            height: 40px
+        }
+        
+        
+        img {
+            width: 100%;
+            height:600px
+        }
+        #offer_div{
+            width: 100%;
+            height:150px;
+        }
+        #bag_div {
+            text-align: center;
+        }
+       
+        /* #order_summery>h4 {
+            text-align: center;
+        } */
+        .img-main {
+            width: 300px;
+            height: 400px;
+            margin-top: 20px;
+        }
+        #checkout {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        #applycoupon {
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+        .strike {
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+        .coupon {
+            margin-left: 50px;
+        }
+        h1,h2 {
+            margin-left: 50px;
+        }
+        #name_logo{
+    width: 100%; 
+}
+#imgah{
+    width: 280px; height: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="heading">
+        <div id="name_logo" onclick=window.location.href="/index.html" ><img  id="imgah" src="https://www.shoppersstop.com/_ui/responsive/common/assets/images/logo.svg"></div>
+    </div>
+        <div id="message">
+            <img id="offer_div" src="offers.png"/>
+         </div>
+       
+
+         
+    <div class="out">
+    </div>
+         <div class="cart_empty">
+            <div id="bag_div">
+                <div>
+                    <h2>SHOPPING BAG</h2>
+                </div>
+                <div>
+                   <p>YOUR SHOPPING BAG IS EMPTY</p>
+               </div>
+               <div>
+                  <a href="checkout.html"> <button type="submit">Continue Shopping</button></a>
+               </div>
+                    </div>
+            
+
+           
+        </div>
+    
+    <div class="coupon">
+    <input id="applycoupon" type="text" list="coupons"placeholder="Enter coupon code"><button id="coupon">Apply coupon</button>
+    </div>
+
+    <h1>Total Price</h1><h2 id="total_price"></h2>
+    <button id="checkout" onclick="payment()">Checkout</button>
+</div>
+
+    <datalist id="coupons">
+        <option value="masai30">
+        <option value="masai50">
+        <option value="masai500">
+    </datalist>
+    
+    <div id="footer">
+    </div>
+
+</body>
+</html>
+<script type="module">
+
+
+import footer from "./components/footer.js";
+
+let footer_box=document.getElementById('footer');
+footer_box.innerHTML=footer();
+</script>
+<script>
+    console.log("h")
+
+var data=[
+
+
+{
+img:"https://sslimages.shoppersstop.com/sys-master/images/hb9/h0d/26971781824542/S22SFCSLB930357_BLACK.jpg_1088Wx1632H",    
+name:"Louis Philippe Sports", 
+price:"1297", 
+strikeprice:"  2199", 
+description:"Solid Cotton Slim Fit Mens Casual Shirt", 
+off:"41",    
+},
+{
+img:"https://sslimages.shoppersstop.com/sys-master/images/h23/h18/17556128825374/AW21DQCN003_TEAL.jpg_1088Wx1632H",    
+name:"Infuse", 
+price:"279", 
+strikeprice:"  699", 
+description:"Printed Cotton Jersey Regular Fit Mens T-Shirt", 
+off:"60",    
+},
+{
+img:"https://sslimages.shoppersstop.com/sys-master/images/h30/h93/17122102444062/A21INFDLF07_STONE.jpg_230Wx334H",    
+name:"Louis Philippe Jeans", 
+price:"1767", 
+strikeprice:"  2999", 
+description:"Slim Fit Mens Jeans",
+off:"41",    
+},
+{
+img:"https://sslimages.shoppersstop.com/sys-master/images/h85/h8f/26840589565982/AW21IPT041_TEAL.jpg_230Wx334H",    
+name:"Insufe", 
+price:"399", 
+strikeprice:"  799", 
+description:"Printed Cotton Regular Fit Mens T-Shirt", 
+off:"30",    
+},
+]
+localStorage.setItem("Product_data",JSON.stringify(data));
+var cartArr=JSON.parse(localStorage.getItem("Product_data"));
+
+   
+    var dis=0;
+    var per=0;
+    var total=0;
+
+
+
+   
+    if(cartArr.length>0){
+        document.getElementsByClassName("coupon")[0].setAttribute("style","display:inline;")
+        document.getElementsByClassName("cart_empty")[0].setAttribute("style","display:none")
+    create_table(cartArr)}
+    else{
+        document.getElementsByClassName("coupon")[0].setAttribute("style","display:none;")
+        document.getElementsByClassName("cart_empty")[0].setAttribute("style","display:inline;")
+    }
+    
+
+
+    function create_table(data){
+document.getElementsByClassName("out")[0].innerHTML="";
+    data.map(function(elem) {
+       var div=document.createElement("div");
+            div.setAttribute("class","product");
+
+            var img1=document.createElement("img");
+            img1.setAttribute("src",elem.img);
+            img1.setAttribute("class","img-main");
+
+            
+           
+
+            var h3=document.createElement("h3");
+            h3.innerHTML=elem.name;
+
+            var h4=document.createElement("h4");
+            h4.innerHTML='Rs: '+elem.price+'<span class="strike">'+'Rs: '+elem.strikeprice+'</span>';
+
+           
+
+            var btn = document.createElement("button");
+            btn.textContent = "remove item";
+            btn.addEventListener("click",function(){
+            deleteToCart(elem);
+        })
+
+            div.append(img1,h3,h4,btn)
+            
+       
+    document.querySelector(".out").append(div)
+
+})}
+
+document.getElementById("coupon").addEventListener("click",function(){
+        var val=document.querySelector("#applycoupon").value;
+        if(val=="masai30")
+        {
+            alert("coupon successfully apply");
+            per=30;
+            dis=0;
+            show_price();
+
+        }
+        else if(val=="masai50")
+        {
+            alert("coupon successfully apply");
+            per=50;
+            dis=0;
+            show_price();
+
+        }
+        else if(val=="masai500")
+        {
+            alert("coupon successfully apply");
+            dis=500;
+            per=0;
+            show_price();
+
+        }
+        else{
+            alert("you enter wrong coupon code")
+        }
+
+    });
+show_price();
+ function show_price(){
+    try{
+    total=cartArr.reduce(function(acc,cv){
+        return acc+Number(cv.price);
+    },0);
+
+    total=((total-dis)/100)*(100-per);
+    total=Math.ceil(total);
+    var striktotal=cartArr.reduce(function(acc,cv){
+        return acc+Number(cv.strikeprice);
+    },0)
+    console.log(total,striktotal)
+    localStorage.setItem("Total_price",JSON.stringify(total));
+    localStorage.setItem("strike_price",JSON.stringify(striktotal));
+    
+
+
+    document.getElementById("total_price").innerHTML="Cart total value =Rs."+total+"   <strike>Rs."+striktotal+"</strike>";
+}
+catch(er){
+        alert(er);
+        console.log(cartArr)
+    }}
+
+    function deleteToCart(data){
+                cartArr.splice(cartArr.indexOf(data),1);
+                create_table(cartArr);
+                show_price();
+                localStorage.setItem("CartItems",JSON.stringify(cartArr));
+                if(cartArr.length==0){window.location.href="Cart.html"}
+        }
+
+
+
+    function payment()
+    {
+        
+        window.location.href="checkout.html"
+    }
+
+    function home1()
+    {
+        window.location.href="index.html";
+    }
+</script>

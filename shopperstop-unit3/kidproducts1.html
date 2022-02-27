@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/productharsh.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="body">
+        
+        <p1 id="htitle3"> 2275 Products</p1>
+        <div id="harshsortandtitle">
+        <p1 id="htitle">Boys Fashion Clothing</p1><p1 id="htitle2"> 2275 Products</p1>
+
+        <select name="sortharsh" id="harshsort" onchange="harshsort1()">
+            <option value="harshatoz" id="harshsort3">SORT BY: A TO Z</option>
+            <option value="harshztoa" id="harshsort3">SORT BY: Z TO A</option>
+            <option value="harshltoh" id="harshsort3">PRICE: LOW TO HIGH</option>
+            <option value="harshhtol" id="harshsort3">PRICE: HIGH TO LOW</option>
+            <option value="harshdltoh" id="harshsort3">DISCOUNT: LOW TO HIGH</option>
+            <option value="harshdhtol" id="harshsort3">DISCOUNT: HIGH TO LOW</option> TO LOW</option>
+        </select>
+    </div>
+        <br>
+        <br><br>
+        <div id="harshcontainer">
+        
+        <div id="harshcat">
+        <div id="harshcatcategories">
+<p id="inputcatharsh">CATEGORIES</p>
+
+<div id="line">
+    
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">ACCESORIES(430)</p> 
+</div>
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">BOTTOMWEAR(60)</p> 
+</div>
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">COMBO SETS(1,070)</p> 
+</div>
+<div id="accesories">
+    <p id="inputcatharsh">
+<input type="checkbox" name="accesories" id="accesories">INDIAN WEAR(420)</p> 
+</div></div>
+        </div>
+        <div id="harshcatsubcategories">
+            <p id="inputcatharsh">SUB-CATEGORIES</p>
+            <div id="line">
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">BRIEFS(3)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">CAPS(49)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">DHOTI KURTA(236)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">JACKETS(31)</p> 
+            </div>
+        </div></div>
+        
+        <div id="harshcatbrands">
+            <p id="inputcatharsh">BRANDS</p>
+            <div id="line">
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">ADIDAS(40)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">ALLEN SOLLY(20)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">CALVIN(24)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">ALLEN SOLLY(10)</p> 
+            </div></div>
+        </div>
+        <div id="harshcatoffers">
+            
+            <p id="inputcatharsh">OFFERS</p>
+ <div id="line">
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 30% OFF(55)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 25% OFF(73)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 40% OFF(22)</p> 
+            </div>
+            <div id="accesories">
+                <p id="inputcatharsh">
+            <input type="checkbox" name="accesories" id="accesories">FLAT 50% OFF(906)</p> 
+            </div></div>
+        </div>
+        <br>
+        <button id="harshrefinesearch">REFINE SEARCH</button>
+        </div>
+        
+<div id="harshmain">
+    
+</div>
+
+</div>
+
+</div>
+<br><br><br>
+<div id="footer">
+
+</div>
+
+    </body>
+    </html>
+           
+<script type="module">
+    import header from "./components/header.js";
+
+let header_box=document.getElementById("header");
+header_box.innerHTML=header();
+
+let input=document.getElementById('search_btn');
+
+input.addEventListener('click',()=>{
+let input_value=document.getElementById('search_bar');
+localStorage.setItem("search_value",JSON.stringify(input_value));
+window.location.href="footer.html";
+});
+
+import footer from "./components/footer.js";
+
+let footer_box=document.getElementById('footer');
+footer_box.innerHTML=footer();
+
+</script>
+    <script >
+        var harsh1={
+
+"men":[
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h47/h03/17380199104542/A21GJB945C303YE_YELLOW.jpg_1088Wx1632H",    
+'name':"Gini & Jony", 
+'price':"299", 
+'strikeprice':" ₹ 499", 
+'description':"Chest Printed Knits Plain Round Neck Boys T-Shirt", 
+'off':"40",    
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/h29/hdb/17378901753886/A21GJB945C303YE_YELLOW_alt2.jpg_2000Wx3000H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h5a/hd4/17378901557278/A21GJB945C303YE_YELLOW_alt2.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/h29/hdb/17378901753886/A21GJB945C303YE_YELLOW_alt2.jpg_2000Wx3000H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h8e/hc3/17380109549598/A21GJB945C303YE_YELLOW_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hb1/h01/16916310786078/S21TSB399031GR_GREEN.jpg_1088Wx1632H",    
+'name':"Tales & Stories", 
+'price':"399", 
+'strikeprice':" ₹ 799", 
+'description':"Solid Cotton Round Neck Boys T-Shirt", 
+'off':"50",    
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/hc8/h3d/16916861550622/S21TSB399031GR_GREEN_alt2.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h71/hee/16916252819486/S21TSB399031GR_GREEN_alt1.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/hc8/h3d/16916861550622/S21TSB399031GR_GREEN_alt2.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h71/hee/16916252819486/S21TSB399031GR_GREEN_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h10/hc4/26832362373150/S21710BSHIRT08_MID_BLUE.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"349", 
+'strikeprice':" ₹ 699", 
+'description':"Solid Cotton Collar Neck Boys Shirt",
+'off':"50", 
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/hf2/hc6/26832354181150/S21710BSHIRT08_MID_BLUE_alt1.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h2b/hc9/26832493183006/S21710BSHIRT08_MID_BLUE_alt4.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/h31/h87/26832357654558/S21710BSHIRT08_MID_BLUE_alt3.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h70/h4f/26832342941726/S21710BSHIRT08_MID_BLUE_alt2.jpg_1088Wx1632H",   
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hed/hcb/26960197746718/S22711GDRESS29_PEACH.jpg_1088Wx1632H",    
+'name':"Life", 
+'price':"799", 
+'strikeprice':"", 
+'description':"Swiss Dobby Polyester Round Neck Girls Casual Dress", 
+'off':"",    
+
+'rightimg':"https://sslimages.shoppersstop.com/sys-master/images/ha2/hfa/26960163012638/S22711GDRESS29_PEACH_alt2.jpg_1088Wx1632H",
+'frontimg':"https://sslimages.shoppersstop.com/sys-master/images/h5d/h1f/26960160784414/S22711GDRESS29_PEACH_alt3.jpg_1088Wx1632H",
+'halfimg':"https://sslimages.shoppersstop.com/sys-master/images/h43/hec/26960202203166/S22711GDRESS29_PEACH_alt4.jpg_1088Wx1632H",
+'backimg':"https://sslimages.shoppersstop.com/sys-master/images/h12/h0b/26960199843870/S22711GDRESS29_PEACH_alt1.jpg_1088Wx1632H",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hee/h34/26772583579678/A21521053145BL_BLACK.jpg_1088Wx1632H",    
+'name':"Monte Carlo", 
+'price':"640", 
+'strikeprice':" ₹ 1280", 
+'description':"Printed Cotton Blend Round Neck Boys Sweatshirt", 
+'off':"50",    
+
+'rightimg':"",
+'frontimg':"",
+'halfimg':"",
+'backimg':"",
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h73/hea/16613210587166/S21RUFFK12312NA_NAVY.jpg_1088Wx1632H",    
+'name':"Ruff", 
+'price':"399", 
+'strikeprice':" ₹ 799", 
+'description':"Graphic Cotton Round Neck Boys T-Shirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h5e/h08/26775274389534/A21521053193GR_GREY.jpg_1088Wx1632H",    
+'name':"Monte Carlo", 
+'price':"712", 
+'strikeprice':" ₹ 1425", 
+'description':"Printed Cotton Blend Collar Neck Boys Sweatshirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/ha6/h26/26771642941470/A21521053102RE_RED.jpg_1088Wx1632H",    
+'name':"Monte Carlo", 
+'price':"465", 
+'strikeprice':" ₹ 930", 
+'description':"Printed Cotton Blend Round Neck Boys Sweatshirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hd5/hb0/17560993890334/S21RUFFK12351RE_RED.jpg_1088Wx1632H",    
+'name':"Ruff", 
+'price':"599", 
+'strikeprice':" ₹ 1199", 
+'description':"Bamboo Hood Boys T-Shirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/ha0/ha0/17290124197918/A21INFBJNS54_BLACK.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"399", 
+'strikeprice':" ₹ 799", 
+'description':"Solid Denim Regular Fit Boys Jeans", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h4b/h13/17514103799838/S21RUFFK12377WH_WHITE.jpg_1088Wx1632H",    
+'name':"Ruff", 
+'price':"249", 
+'strikeprice':" ₹ 499", 
+'description':"Cotton Round Neck Boys T-Shirt",
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h8b/hd8/26534614663198/A21711BTRO008A_GREEN.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"399", 
+'strikeprice':" ₹ 799", 
+'description':"Solid Cotton Rich Round Neck Boys Troyer", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h6f/haf/26832359358494/S21711BSHIRT08_MID_STONE.jpg_1088Wx1632H",    
+'name':"Life", 
+'price':"399", 
+'strikeprice':" ₹ 799", 
+'description':"Solid Cotton Collar Neck Boys Shirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h25/h2f/16613495734302/S21GJB382C180KH_KHAKI.jpg_1088Wx1632H",    
+'name':"Gini & Jony", 
+'price':"389", 
+'strikeprice':" ₹ 649", 
+'description':"Printed Cotton Regular Fit Boys Shorts", 
+'off':"40",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h8b/h64/17380266999838/A21GJB218C472RE_RED.jpg_1088Wx1632H",    
+'name':"Gini & Jony", 
+'price':"329", 
+'strikeprice':" ₹ 549", 
+'description':"Knits Plain Polo Neck Boys T-Shirt", 
+'off':"40",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h3c/h81/26774568828958/A21521053329NA_NAVY.jpg_1088Wx1632H",    
+'name':"Monte Carlo", 
+'price':"772", 
+'strikeprice':" ₹ 1545", 
+'description':"Solid Cotton Round Neck Boys Pullover", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hef/h55/17561018204190/S21RUFFK05964LE_LEMON.jpg_1088Wx1632H",    
+'name':"Ruff", 
+'price':"699", 
+'strikeprice':" ₹ 1399", 
+'description':"Tencel Hood Boys Shirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h62/h88/17290093068318/A21INFBJNS45_BLACK.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"349", 
+'strikeprice':" ₹ 699", 
+'description':"Solid Cotton Round Neck Boys Pullover", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hb6/h1b/16916242759710/S21TSB400055GR_GREEN.jpg_1088Wx1632H",    
+'name':"Tales & Stories", 
+'price':"399", 
+'strikeprice':" ₹ 799", 
+'description':"Printed Cotton Round Neck Boys T-Shirt",
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hc8/h4f/16536775983134/S21710BTEE043_ROYAL_BLUE.jpg_1088Wx1632H",    
+'name':"Stop", 
+'price':"249", 
+'strikeprice':" ₹ 499", 
+'description':"Stripes Cotton Rich Polo Neck Boys T-Shirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hba/h7e/17403231371294/A21521053148OL_OLIVE.jpg_1088Wx1632H",    
+'name':"Monte Carlo", 
+'price':"665", 
+'strikeprice':" ₹ 1330", 
+'description':"Printed Cotton Blend Round Neck Boys Sweatshirt", 
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/he3/h22/17380482711582/S21GJB524C207BL_BLACK.jpg_1088Wx1632H",    
+'name':"Gini & Jony", 
+'price':"479", 
+'strikeprice':" ₹ 799", 
+'description':"Printed Knits Plain Regular Fit Boys Knits Bermuda", 
+'off':"40",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/h78/hc7/17355257675806/A21INFBJNS43_MID_STONE.jpg_1088Wx1632H",    
+'name':"Infuse", 
+'price':"349", 
+'strikeprice':" ₹ 699", 
+'description':"Solid Denim Regular Fit Boys Shorts",
+'off':"50",    
+},
+{
+'img':"https://sslimages.shoppersstop.com/sys-master/images/hd6/h1c/17502197678110/S21RUFF12367PRE_RED.jpg_1088Wx1632H",    
+'name':"Ruff", 
+'price':"499", 
+'strikeprice':" ₹ 999", 
+'description':"Cotton Blend Comfort Fit Boys Track Pants", 
+'off':"50",    
+},
+],
+};
+
+var harsh4=harsh1.men;
+var harshnormal2=harsh4;
+console.log(harshnormal2);
+var harshltoh=harsh4;
+var hmain= document.getElementById("harshmain");
+var harshhtol=harsh4;
+
+var count=0;
+function harshsort1(){
+
+var harshsort2=document.getElementById("harshsort")
+if(harshsort2.value=="harshatoz"){
+    count++;
+    harshnormal2.sort(function (x, y) {
+        let a = x.name.toUpperCase(),
+        b = y.name.toUpperCase();
+    return a == b ? 0 : a > b ? 1 : -1
+    }); 
+    harshappend(harshnormal2,hmain)
+}
+else if(harshsort2.value=="harshztoa"){
+    count++;
+    harshnormal2.sort(function (x, y) {
+        let b = x.name.toUpperCase(),
+        a = y.name.toUpperCase();
+    return a == b ? 0 : a > b ? 1 : -1
+    }); 
+    harshappend(harshnormal2,hmain)
+}
+
+else if(harshsort2.value=="harshltoh"){
+count++;
+harshltoh.sort(function (x, y) {
+    
+   return x.price - y.price;
+});
+
+
+harshappend(harshltoh,hmain)
+}
+else if(harshsort2.value=="harshhtol")
+{
+count++;
+harshhtol.sort(function (x, y) {
+    
+    return y.price - x.price;
+});
+
+harshappend(harshhtol,hmain)
+}
+else if(harshsort2.value=="harshdltoh"){
+count++;
+    harshltoh.sort(function (x, y) {
+        
+       return x.off - y.off;
+   });
+
+
+   harshappend(harshltoh,hmain)
+}
+else if(harshsort2.value=="harshdhtol")
+{
+    count++;
+    harshhtol.sort(function (x, y) {
+        
+        return y.off - x.off;
+    });
+ 
+    harshappend(harshhtol,hmain)
+}
+
+}
+
+//console.log(harsh1,hmain)
+if(count==0){
+harshappend(harsh1.men,hmain)
+}
+function harshappend(data,hmain){
+
+    hmain.innerHTML=null;
+data.forEach((e)=>{
+  // console.log(e)
+    let div=document.createElement("div")
+    div.id="harshdiv"
+
+let harshimage=document.createElement("img")
+harshimage.src=e.img;
+harshimage.id="harshimage";
+
+let harshtitle=document.createElement("p")
+harshtitle.innerText=e.name;
+harshtitle.id="harshtitle"
+let harshdescription=document.createElement("p")
+harshdescription.innerText=e.description;
+harshdescription.id="harshdescription";
+
+let harshprice=document.createElement("p1")
+harshprice.innerText=`₹${e.price}`;
+harshprice.id="harshprice";
+
+
+let harshprice2=document.createElement("p1")
+harshprice2.innerText=e.strikeprice;
+
+harshprice2.id="harshstrike";
+
+let harshprice3=document.createElement("p1")
+if(e.off==""){
+harshprice3.innerText=null;
+}
+else{
+harshprice3.innerText=`${e.off}% off`;
+}
+harshprice3.id="harshofftext";
+div.onclick=function(){
+    localStorage.setItem("data",JSON.stringify(e));
+    window.location.href="kidsProductPage.html"
+}
+
+let harshnewline=document.createElement("p")
+harshnewline.innerText="";
+
+div.append(harshimage,harshtitle,harshdescription,harshprice,harshprice2,harshprice3,harshnewline)
+
+hmain.append(div)
+})
+}
+    </script>

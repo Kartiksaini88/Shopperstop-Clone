@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            
+            display: inline-block;
+        
+            
+           
+        }
+        #heading {
+            text-align: end;
+            
+
+        }
+        #heading>h1 {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #pagetype {
+            width: 700px;
+            height: 50px;
+            background-color: rgb(175, 174, 174);
+           padding: 2px;
+           padding-left: 50px;
+           margin-left: 100px;
+           margin-bottom: 30px;
+           
+        }
+        input {
+            margin-top: 20px;
+            margin-right: 20px;
+            border: none;
+        }
+        #save_div {
+            margin-left: 500px;
+            width: 200px;
+            height: 40px
+        }
+        button {
+            background: linear-gradient(to right, #ff9966 0%, #ff0066 100%);
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+        }
+        #form_div {
+           margin-left: 200px;
+        }
+        #add_div{
+            margin-left: 150px;
+        }
+        #order_summery {
+           
+            border: 20px solid rgb(175, 174, 174) ;
+            width: 300px;
+            height: 340px;
+            display: inline-block;
+            margin-top: -100px;
+            text-align: center;
+            margin-left: 100px;
+          
+            
+        }
+        img {
+            width: 100%;
+            height:600px
+        }
+        /* #order_summery>h4 {
+            text-align: center;
+        } */
+        #message {
+            width: 750px;
+            height: 100px;
+           
+          
+           margin-left: 100px;
+           margin-bottom: 30px;
+          
+           padding-right: -30px;
+           
+        }
+        #img_div {
+            width: 750px;
+            height: 100px
+        }
+        .con1{
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        
+        
+        #order {
+            background-color: rgb(175, 174, 174);
+            padding: 5px;
+        }
+        #total_div {
+            margin-top: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="heading">
+        <h1 >SHOPPER STOP</h1>
+
+    </div>
+    <div id="pagename">
+        <h3>CHECK OUT</h3>
+    </div>
+    <div id="pagetype">
+        <h2>1.DELIVERY METHOD</h2>
+    </div>
+    <div id="pagetype">
+        <h2>2.MAKE PAYMENT</h2>
+    </div>
+    <div id="message">
+       <img id="img_div" src="message.png"/>
+    </div>
+    <div id="pagetype">
+        <h2>CARD PAYMENT</h2>
+    </div>
+
+    <div  class="con1">
+        <div >
+        <input id="name" id="sizing" type="text"   placeholder="Enter Name">
+        </div>
+        <div >
+        <input  id="cardno " id="sizing" type="number" placeholder="Card number">
+        </div>
+        <div >
+        <input id="cvv" type="number" placeholder="CVV">
+        </div>
+        <div >
+        <input  id="otp"type="number" placeholder="Enter OTP">
+        </div>
+        <div id="save_div" >
+       <button type="submit" id="doneorder11" onclick="doneorder">PLACE ORDER</button> 
+        </div>
+    </div>
+     </div>
+    </div>
+    <div id="order_summery"><div>
+            <h2 id="order">ORDER SUMMARY</h2>
+        </div>
+        <div id="total"></div>
+        <div>
+            <h4>DELIVERY CHARGES:<span>       </span>FREE</h4>
+            <h4>GIFT PACKING: <span>       </span>FREE</h4>
+            <h4 id="dis_price"></h4>
+            <h4 id="strike_price">COUPON DISCOUNT</h4>
+        </div>
+        <div>
+            <h3 id="total_div"></h3>
+        </div></div>
+    <div><img src="footer.png"/>
+    </div>
+</body>
+</html>
+<script>
+    
+var doneorder1=document.getElementById("doneorder11")
+doneorder1.addEventListener("click",doneorder)
+    function doneorder(){
+        console.log("h")
+        alert('Your payment is successful')
+        window.location.href="index.html"
+    }
+    var cart_price=JSON.parse(localStorage.getItem("Total_price"));
+    var cart_strikeprice=JSON.parse(localStorage.getItem("strike_price"));
+    console.log("cart_price:",cart_price)
+    document.getElementById('dis_price').innerText='TOTAL CART PRICE:        '+cart_price;
+    document.getElementById("strike_price").innerText='COUPON DISCOUNT:     '+cart_strikeprice;
+    document.getElementById('total_div').innerText='TOTAL  PAYABLE:        '+cart_price;
+</script>
