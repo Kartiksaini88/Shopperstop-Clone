@@ -5,7 +5,7 @@
 <hr/>
 <img src="https://www.bing.com/images/blob?bcid=S4KhaoWoFRsEXA" />
 <h2>Here's the link of my demo Shopper Stop project: <a href="https://shoppersdemo.netlify.app/" target="_blank">Shopper Stop clone</a> </h2>
-<h3>Languages that we are used in this project:- HTML  | CSS  | JavaScript</h3>
+<h3>Languages that we have used in this project:- HTML  | CSS  | JavaScript</h3>
 <h3>
 Shoppers Stop is an Indian department store chain, owned by the K Raheja Corp. There are 86 stores across 40 cities in India, with clothing, accessories, handbags, shoes, jewellery, fragrances, cosmetics, health and beauty products, home furnishing, and decor products.</h3>
 
